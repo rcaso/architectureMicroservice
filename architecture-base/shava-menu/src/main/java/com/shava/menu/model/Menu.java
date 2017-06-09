@@ -5,13 +5,13 @@ import java.util.List;
 
 /**
  * <ul>
- * <li>Copyright 2016 Ministerio Publico - Fiscalia de la Nacion. Todos los derechos reservados.</li>
+ * <li>Copyright 2017 Shava. Todos los derechos reservados.</li>
  * </ul> 
  * 
  * La Class Menu.
  *
  * @author OSIS
- * @version 1.0 , 15/07/2016
+ * @version 1.0 , 08-jun-2017
  */
 public class Menu implements Serializable {
 
@@ -52,9 +52,9 @@ public class Menu implements Serializable {
 	}
 
 	/**
-	 * Sets the nombre.
+	 * Establece el nombre.
 	 *
-	 * @param nombre el nombre
+	 * @param nombre el new nombre
 	 */
 	public void setNombre(String nombre) {
 		this.nombre = nombre;

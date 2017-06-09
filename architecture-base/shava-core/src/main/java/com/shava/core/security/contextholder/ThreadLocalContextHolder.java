@@ -5,13 +5,13 @@ import java.util.Map;
 
 /**
  * <ul>
- * <li>Copyright 2016 Ministerio Publico - Fiscalia de la Nacion. Todos los derechos reservados.</li>
+ * <li>Copyright 2017 Shava. Todos los derechos reservados.</li>
  * </ul> 
  * 
  * La Class ThreadLocalContextHolder.
  *
  * @author OSIS
- * @version 1.0 , 21/04/2016
+ * @version 1.0 , 08-jun-2017
  */
 public class ThreadLocalContextHolder {
 	
@@ -34,7 +34,7 @@ public class ThreadLocalContextHolder {
     /**
      * Gets the.
      *
-     * @param key the key
+     * @param key el key
      * @return the object
      */
     public static Object get(String key) {
@@ -51,14 +51,14 @@ public class ThreadLocalContextHolder {
     /**
      * Check initialited.
      *
-     * @return true, if successful
+     * @return true, en caso de exito
      */
     public static boolean checkInitialited() {
     	return THREAD_WITH_CONTEXT.get() != null;
     }
 
 	/**
-	 * Instantiates a new thread local context holder.
+	 * Instancia un nuevo thread local context holder.
 	 */
 	private ThreadLocalContextHolder() {
 		// TODO Auto-generated constructor stub

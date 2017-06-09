@@ -2,20 +2,20 @@ package com.shava.menu.model;
 
 /**
  * <ul>
- * <li>Copyright 2016 Ministerio Publico - Fiscalia de la Nacion. Todos los derechos reservados.</li>
+ * <li>Copyright 2017 Shava. Todos los derechos reservados.</li>
  * </ul> 
  * 
  * La Enum LanguageType.
  *
  * @author OSIS
- * @version 1.0 , 15/07/2016
+ * @version 1.0 , 08-jun-2017
  */
 public enum LanguageType {
 	
 	/** La spanish. */
 	SPANISH("es"),
 	
-	/** The english. */
+	/** La english. */
 	ENGLISH("en");
 	
 	/** La value. */

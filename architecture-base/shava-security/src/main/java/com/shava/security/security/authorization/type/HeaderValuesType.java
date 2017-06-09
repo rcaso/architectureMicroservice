@@ -2,19 +2,23 @@ package com.shava.security.security.authorization.type;
 
 /**
  * <ul>
- * <li>Copyright 2016 Ministerio Publico - Fiscalia de la Nacion. Todos los derechos reservados.</li>
+ * <li>Copyright 2017 Shava. Todos los derechos reservados.</li>
  * </ul> 
  * 
  * La Enum HeaderValuesType.
  *
  * @author OSIS
- * @version 1.0 , 21/04/2016
+ * @version 1.0 , 08-jun-2017
  */
 public enum HeaderValuesType {
 	
 	/** La cause. */
 	CAUSE("cause"),
+	
+	/** La authorization. */
 	AUTHORIZATION("Authorization"),
+	
+	/** La bearer. */
 	BEARER("Bearer");
 	
 	/** La value. */

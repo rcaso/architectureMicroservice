@@ -4,13 +4,13 @@ import java.io.Serializable;
 
 /**
  * <ul>
- * <li>Copyright 2016 Ministerio Publico - Fiscalia de la Nacion. Todos los derechos reservados.</li>
+ * <li>Copyright 2017 Shava. Todos los derechos reservados.</li>
  * </ul> 
  * 
  * La Class MenuOption.
  *
  * @author OSIS
- * @version 1.0 , 15/07/2016
+ * @version 1.0 , 08-jun-2017
  */
 public class MenuOption implements Serializable, Comparable<MenuOption> {
 
@@ -80,9 +80,9 @@ public class MenuOption implements Serializable, Comparable<MenuOption> {
 
 
 	/**
-	 * Sets the name.
+	 * Establece el name.
 	 *
-	 * @param name el name
+	 * @param name el new name
 	 */
 	public void setName(String name) {
 		this.name = name;

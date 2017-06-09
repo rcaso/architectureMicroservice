@@ -17,13 +17,13 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  * <ul>
- * <li>Copyright 2016 Ministerio Publico - Fiscalia de la Nacion. Todos los derechos reservados.</li>
+ * <li>Copyright 2017 Shava. Todos los derechos reservados.</li>
  * </ul> 
  * 
  * La Class UserLogoutServlet.
  *
  * @author OSIS
- * @version 1.0 , 20/07/2016
+ * @version 1.0 , 08-jun-2017
  */
 @WebServlet("/userLogout")
 public class UserLogoutServlet extends HttpServlet {
@@ -48,35 +48,21 @@ public class UserLogoutServlet extends HttpServlet {
        
     /**
      * Instancia un nuevo user logout servlet.
-     *
-     * @see HttpServlet#HttpServlet()
      */
     public UserLogoutServlet() {
         super();
         // TODO Auto-generated constructor stub
     }
 
-	/**
-	 * Do get.
-	 *
-	 * @param request el request
-	 * @param response el response
-	 * @throws ServletException the servlet exception
-	 * @throws IOException Señales de que una excepción de E / S se ha producido.
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	/* (non-Javadoc)
+	 * @see javax.servlet.http.HttpServlet#doGet(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		processRequest(request, response);
 	}
 
-	/**
-	 * Do post.
-	 *
-	 * @param request el request
-	 * @param response el response
-	 * @throws ServletException the servlet exception
-	 * @throws IOException Señales de que una excepción de E / S se ha producido.
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	/* (non-Javadoc)
+	 * @see javax.servlet.http.HttpServlet#doPost(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub

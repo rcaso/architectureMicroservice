@@ -16,24 +16,23 @@ import com.shava.security.audit.RegistryContextHolder;
 
 /**
  * <ul>
- * <li>Copyright 2016 Ministerio Publico - Fiscalia de la Nacion. Todos los derechos reservados.</li>
+ * <li>Copyright 2017 Shava. Todos los derechos reservados.</li>
  * </ul> 
  * 
  * La Class UserAuditInterceptor.
  *
  * @author OSIS
- * @version 1.0 , 21/04/2016
+ * @version 1.0 , 08-jun-2017
  */
 @UserAudit
 @Interceptor
 @Priority(Interceptor.Priority.APPLICATION)
 public class UserAuditInterceptor implements Serializable {
 
-	/**
-	 * 
-	 */
+	/** La Constante serialVersionUID. */
 	private static final long serialVersionUID = 8594142776848001204L;
 	
+	/** La registry. */
 	@Resource
 	private TransactionSynchronizationRegistry registry;
 

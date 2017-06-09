@@ -16,13 +16,13 @@ import com.shava.security.security.authorization.type.HeaderValuesType;
 
 /**
  * <ul>
- * <li>Copyright 2016 Ministerio Publico - Fiscalia de la Nacion. Todos los derechos reservados.</li>
+ * <li>Copyright 2017 Shava. Todos los derechos reservados.</li>
  * </ul> 
  * 
  * La Class HeaderTokenFilter.
  *
  * @author OSIS
- * @version 1.0 , 22/07/2016
+ * @version 1.0 , 08-jun-2017
  */
 @ApplicationScoped
 @Provider
@@ -39,11 +39,9 @@ public class HeaderTokenFilter implements ClientRequestFilter {
 	/** La authorization enabled. */
 	@Inject @Configurable
 	boolean authorizationEnabled;
-	/**
-	 * Filter.
-	 *
-	 * @param requestContext el request context
-	 * @throws IOException Señales de que una excepción de E / S se ha producido.
+	
+	/* (non-Javadoc)
+	 * @see javax.ws.rs.client.ClientRequestFilter#filter(javax.ws.rs.client.ClientRequestContext)
 	 */
 	@Override
 	public void filter(ClientRequestContext requestContext) throws IOException {

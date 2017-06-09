@@ -11,13 +11,13 @@ import javax.inject.Named;
 
 /**
  * <ul>
- * <li>Copyright 2016 Ministerio Publico - Fiscalia de la Nacion. Todos los derechos reservados.</li>
+ * <li>Copyright 2017 Shava. Todos los derechos reservados.</li>
  * </ul> 
  * 
- * La Class UserMenuBean.
+ * La Class UserInfo.
  *
  * @author OSIS
- * @version 1.0 , 18/07/2016
+ * @version 1.0 , 08-jun-2017
  */
 @Named
 @SessionScoped
@@ -46,7 +46,7 @@ public class UserInfo implements Serializable {
 	private String lastLoginDescription;
 
 	/**
-	 * Instancia un nuevo user menu bean.
+	 * Instancia un nuevo user info.
 	 */
 	public UserInfo() {
 		// TODO Auto-generated constructor stub

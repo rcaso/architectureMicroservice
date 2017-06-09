@@ -11,13 +11,13 @@ import javax.faces.context.ExceptionHandlerFactory;
 public class DefaultExceptionHandlerFactory extends ExceptionHandlerFactory {
 
 
-	/** The parent. */
+	/** La parent. */
 	private ExceptionHandlerFactory parent;
 
 	/**
-	 * Instantiates a new default exception handler factory.
+	 * Instancia un nuevo default exception handler factory.
 	 *
-	 * @param parent the parent
+	 * @param parent el parent
 	 */
 	public DefaultExceptionHandlerFactory(ExceptionHandlerFactory parent) {
 		this.parent = parent;

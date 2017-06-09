@@ -7,13 +7,13 @@ import java.util.logging.Logger;
 
 /**
  * <ul>
- * <li>Copyright 2016 Ministerio Publico - Fiscalia de la Nacion. Todos los derechos reservados.</li>
+ * <li>Copyright 2017 Shava. Todos los derechos reservados.</li>
  * </ul> 
  * 
  * La Class SignatureParameter.
  *
  * @author OSIS
- * @version 1.0 , 22/04/2016
+ * @version 1.0 , 08-jun-2017
  */
 public class SignatureParameter {
 	
@@ -29,10 +29,10 @@ public class SignatureParameter {
 	/** La user name. */
 	private String userName="nombre";
 	
-	/** La user dni. */
+	/** La user DNI. */
 	private String userDNI="dni";
 	
-	/** La user ip. */
+	/** La user IP. */
 	private String userIP="ip";
 	
 	/** La signature parameter. */
@@ -92,18 +92,18 @@ public class SignatureParameter {
 	}
 
 	/**
-	 * Obtiene user dni.
+	 * Obtiene user DNI.
 	 *
-	 * @return user dni
+	 * @return user DNI
 	 */
 	public String getUserDNI() {
 		return userDNI;
 	}
 
 	/**
-	 * Obtiene user ip.
+	 * Obtiene user IP.
 	 *
-	 * @return user ip
+	 * @return user IP
 	 */
 	public String getUserIP() {
 		return userIP;

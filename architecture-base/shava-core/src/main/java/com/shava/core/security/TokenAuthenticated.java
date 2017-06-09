@@ -9,13 +9,13 @@ import javax.ws.rs.NameBinding;
 
 /**
  * <ul>
- * <li>Copyright 2016 Ministerio Publico - Fiscalia de la Nacion. Todos los derechos reservados.</li>
+ * <li>Copyright 2017 Shava. Todos los derechos reservados.</li>
  * </ul> 
  * 
  * La Interface TokenAuthenticated.
  *
  * @author OSIS
- * @version 1.0 , 21/04/2016
+ * @version 1.0 , 08-jun-2017
  */
 @NameBinding
 @Target({ElementType.METHOD, ElementType.TYPE})

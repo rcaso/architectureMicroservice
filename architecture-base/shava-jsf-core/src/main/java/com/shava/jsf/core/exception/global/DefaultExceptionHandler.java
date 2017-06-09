@@ -22,29 +22,29 @@ import org.apache.commons.lang3.exception.ExceptionUtils;
 
 /**
  * <ul>
- * <li>Copyright 2016 Ministerio Publico - Fiscalia de la Nacion. Todos los derechos reservados.</li>
+ * <li>Copyright 2017 Shava. Todos los derechos reservados.</li>
  * </ul> 
  * 
  * La Class DefaultExceptionHandler.
  *
  * @author OSIS
- * @version 1.0 , 23/05/2016
+ * @version 1.0 , 08-jun-2017
  */
 public class DefaultExceptionHandler extends ExceptionHandlerWrapper {
 
-	/** The log. */
+	/** La log. */
 	private Logger log = Logger.getLogger(DefaultExceptionHandler.class.getCanonicalName());
 	
-	/** key for session scoped message detail. */
+	/** La Constante MESSAGE_DETAIL_KEY. */
 	public static final String MESSAGE_DETAIL_KEY = "ip.client.jsftoolkit.messageDetail";
 
-	/** The wrapped. */
+	/** La wrapped. */
 	private ExceptionHandler wrapped;
 
 	/**
-	 * Instantiates a new default exception handler.
+	 * Instancia un nuevo default exception handler.
 	 *
-	 * @param wrapped the wrapped
+	 * @param wrapped el wrapped
 	 */
 	public DefaultExceptionHandler(ExceptionHandler wrapped) {
 		this.wrapped = wrapped;
@@ -99,10 +99,10 @@ public class DefaultExceptionHandler extends ExceptionHandlerWrapper {
 	}
 
 	/**
-	 * Redirect error page.
+	 * Redirect error.
 	 *
-	 * @param facesContext the faces context
-	 * @param errorPage the error page
+	 * @param facesContext el faces context
+	 * @param errorPage el error page
 	 */
 	private void redirectError(FacesContext facesContext, String errorPage){
 		StringBuilder sbJScript = new StringBuilder("");
@@ -154,8 +154,8 @@ public class DefaultExceptionHandler extends ExceptionHandlerWrapper {
 	/**
 	 * Handle unexpected.
 	 *
-	 * @param facesContext the faces context
-	 * @param t the t
+	 * @param facesContext el faces context
+	 * @param t el t
 	 * @return the string
 	 */
 	protected String handleUnexpected(FacesContext facesContext,

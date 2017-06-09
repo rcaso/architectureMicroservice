@@ -18,13 +18,13 @@ import com.shava.core.logging.ShavaLogger;
 
 /**
  * <ul>
- * <li>Copyright 2016 Ministerio Publico - Fiscalia de la Nacion. Todos los derechos reservados.</li>
+ * <li>Copyright 2017 Shava. Todos los derechos reservados.</li>
  * </ul> 
  * 
  * La Class ConfigurableParameterProducer.
  *
  * @author OSIS
- * @version 1.0 , 15/04/2016
+ * @version 1.0 , 08-jun-2017
  */
 @ApplicationScoped
 public class ConfigurableParameterProducer implements Serializable {
@@ -127,20 +127,20 @@ public class ConfigurableParameterProducer implements Serializable {
 	}
 	
 	/**
-	 * Gets the name field.
+	 * Obtiene name field.
 	 *
-	 * @param point the point
-	 * @return the name field
+	 * @param point el point
+	 * @return name field
 	 */
 	private String getNameField(InjectionPoint point) {
 		return point.getMember().getName();
 	}
 	
 	/**
-	 * Gets the value for key.
+	 * Obtiene value for key.
 	 *
-	 * @param fieldName the field name
-	 * @return the value for key
+	 * @param fieldName el field name
+	 * @return value for key
 	 */
 	private String getValueForKey(String fieldName) {
 		return configurationFile.getProperty(fieldName);

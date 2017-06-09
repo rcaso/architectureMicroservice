@@ -36,13 +36,13 @@ import com.shava.menu.model.Menu;
 
 /**
  * <ul>
- * <li>Copyright 2016 Ministerio Publico - Fiscalia de la Nacion. Todos los derechos reservados.</li>
+ * <li>Copyright 2017 Shava. Todos los derechos reservados.</li>
  * </ul> 
  * 
  * La Class MenuFilter.
  *
  * @author OSIS
- * @version 1.0 , 20/07/2016
+ * @version 1.0 , 08-jun-2017
  */
 @WebFilter("/*")
 public class MenuFilter implements Filter {
@@ -68,30 +68,21 @@ public class MenuFilter implements Filter {
 	MenuProducerController menuProducer;
 
     /**
-     * Default constructor. 
+     * Instancia un nuevo menu filter.
      */
     public MenuFilter() {
         // TODO Auto-generated constructor stub
     }
 
-	/**
-	 * Destroy.
-	 *
-	 * @see Filter#destroy()
+	/* (non-Javadoc)
+	 * @see javax.servlet.Filter#destroy()
 	 */
 	public void destroy() {
 		// TODO Auto-generated method stub
 	}
 
-	/**
-	 * Do filter.
-	 *
-	 * @param request el request
-	 * @param response el response
-	 * @param chain el chain
-	 * @throws IOException Señales de que una excepción de E / S se ha producido.
-	 * @throws ServletException the servlet exception
-	 * @see Filter#doFilter(ServletRequest, ServletResponse, FilterChain)
+	/* (non-Javadoc)
+	 * @see javax.servlet.Filter#doFilter(javax.servlet.ServletRequest, javax.servlet.ServletResponse, javax.servlet.FilterChain)
 	 */
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
 		HttpServletRequest req = (HttpServletRequest) request;
@@ -118,12 +109,8 @@ public class MenuFilter implements Filter {
 		chain.doFilter(request, response);
 	}
 
-	/**
-	 * Inits the.
-	 *
-	 * @param fConfig el f config
-	 * @throws ServletException the servlet exception
-	 * @see Filter#init(FilterConfig)
+	/* (non-Javadoc)
+	 * @see javax.servlet.Filter#init(javax.servlet.FilterConfig)
 	 */
 	public void init(FilterConfig fConfig) throws ServletException {
 		// TODO Auto-generated method stub
