@@ -16,7 +16,7 @@ import javax.inject.Named;
  * 
  * La Class UserInfo.
  *
- * @author OSIS
+ * @author RCASO
  * @version 1.0 , 08-jun-2017
  */
 @Named

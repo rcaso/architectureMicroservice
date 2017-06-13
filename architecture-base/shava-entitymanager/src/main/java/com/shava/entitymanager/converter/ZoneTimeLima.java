@@ -7,7 +7,7 @@ package com.shava.entitymanager.converter;
  * 
  * La Class ZoneTimeLima.
  *
- * @author OSIS
+ * @author RCASO
  * @version 1.0 , 08-jun-2017
  */
 public class ZoneTimeLima {

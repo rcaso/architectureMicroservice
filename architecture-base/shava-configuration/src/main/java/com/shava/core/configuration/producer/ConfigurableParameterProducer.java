@@ -23,7 +23,7 @@ import com.shava.core.logging.ShavaLogger;
  * 
  * La Class ConfigurableParameterProducer.
  *
- * @author OSIS
+ * @author RCASO
  * @version 1.0 , 08-jun-2017
  */
 @ApplicationScoped

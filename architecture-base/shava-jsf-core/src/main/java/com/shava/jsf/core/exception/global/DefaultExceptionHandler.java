@@ -27,7 +27,7 @@ import org.apache.commons.lang3.exception.ExceptionUtils;
  * 
  * La Class DefaultExceptionHandler.
  *
- * @author OSIS
+ * @author RCASO
  * @version 1.0 , 08-jun-2017
  */
 public class DefaultExceptionHandler extends ExceptionHandlerWrapper {

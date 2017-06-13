@@ -19,7 +19,7 @@ import com.shava.jsf.core.client.filter.HeaderTokenFilter;
  * 
  * La Class BaseBean.
  *
- * @author OSIS
+ * @author RCASO
  * @version 1.0 , 08-jun-2017
  */
 public abstract class BaseBean implements Serializable {

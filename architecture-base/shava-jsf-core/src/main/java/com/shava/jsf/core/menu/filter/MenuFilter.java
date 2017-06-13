@@ -41,7 +41,7 @@ import com.shava.menu.model.Menu;
  * 
  * La Class MenuFilter.
  *
- * @author OSIS
+ * @author RCASO
  * @version 1.0 , 08-jun-2017
  */
 @WebFilter("/*")

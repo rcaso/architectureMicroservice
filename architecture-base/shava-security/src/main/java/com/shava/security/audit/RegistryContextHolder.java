@@ -7,7 +7,7 @@ package com.shava.security.audit;
  * 
  * La Class RegistryContextHolder.
  *
- * @author OSIS
+ * @author RCASO
  * @version 1.0 , 08-jun-2017
  */
 public class RegistryContextHolder {

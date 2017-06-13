@@ -7,7 +7,7 @@ package com.shava.security.security.authorization.type;
  * 
  * La Enum HeaderValuesType.
  *
- * @author OSIS
+ * @author RCASO
  * @version 1.0 , 08-jun-2017
  */
 public enum HeaderValuesType {

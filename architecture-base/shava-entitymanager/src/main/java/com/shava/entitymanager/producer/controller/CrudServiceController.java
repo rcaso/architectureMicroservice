@@ -29,7 +29,7 @@ import com.shava.security.audit.RegistryContextHolder;
  * 
  * La Class CrudServiceController.
  *
- * @author OSIS
+ * @author RCASO
  * @version 1.0 , 08-jun-2017
  */
 @Stateless

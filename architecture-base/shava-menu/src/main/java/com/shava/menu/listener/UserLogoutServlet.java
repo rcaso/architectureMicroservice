@@ -22,7 +22,7 @@ import javax.servlet.http.HttpServletResponse;
  * 
  * La Class UserLogoutServlet.
  *
- * @author OSIS
+ * @author RCASO
  * @version 1.0 , 08-jun-2017
  */
 @WebServlet("/userLogout")

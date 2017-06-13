@@ -8,7 +8,7 @@ package com.shava.core.configuration;
  * 
  * La Class FilesConfiguration.
  *
- * @author OSIS
+ * @author RCASO
  * @version 1.0 , 08-jun-2017
  */
 public class FilesConfiguration {

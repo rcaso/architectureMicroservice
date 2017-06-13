@@ -11,7 +11,7 @@ import com.shava.core.logging.ShavaLogger;
  * 
  * La Class Slf4Logger.
  *
- * @author OSIS
+ * @author RCASO
  * @version 1.0 , 08-jun-2017
  */
 public class Slf4Logger implements ShavaLogger {

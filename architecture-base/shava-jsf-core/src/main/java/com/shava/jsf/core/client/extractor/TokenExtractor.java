@@ -16,7 +16,7 @@ import org.keycloak.authorization.client.representation.EntitlementResponse;
  * 
  * La Class TokenExtractor.
  *
- * @author OSIS
+ * @author RCASO
  * @version 1.0 , 08-jun-2017
  */
 @ApplicationScoped

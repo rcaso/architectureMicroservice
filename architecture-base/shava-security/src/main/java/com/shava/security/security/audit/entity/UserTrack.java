@@ -11,7 +11,7 @@ import java.util.List;
  * 
  * La Class UserTrack.
  *
- * @author OSIS
+ * @author RCASO
  * @version 1.0 , 08-jun-2017
  */
 public class UserTrack implements Serializable {

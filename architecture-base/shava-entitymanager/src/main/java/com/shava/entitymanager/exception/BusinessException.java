@@ -9,7 +9,7 @@ import javax.ejb.ApplicationException;
  * 
  * La Class BusinessException.
  *
- * @author OSIS
+ * @author RCASO
  * @version 1.0 , 08-jun-2017
  */
 @ApplicationException(inherited=true,rollback=true)

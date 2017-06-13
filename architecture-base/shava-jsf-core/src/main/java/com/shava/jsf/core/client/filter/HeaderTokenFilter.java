@@ -21,7 +21,7 @@ import com.shava.security.security.authorization.type.HeaderValuesType;
  * 
  * La Class HeaderTokenFilter.
  *
- * @author OSIS
+ * @author RCASO
  * @version 1.0 , 08-jun-2017
  */
 @ApplicationScoped

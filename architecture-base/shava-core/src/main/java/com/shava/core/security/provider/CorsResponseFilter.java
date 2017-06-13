@@ -17,7 +17,7 @@ import javax.ws.rs.ext.Provider;
  * 
  * La Class CorsResponseFilter.
  *
- * @author OSIS
+ * @author RCASO
  * @version 1.0 , 08-jun-2017
  */
 @Provider

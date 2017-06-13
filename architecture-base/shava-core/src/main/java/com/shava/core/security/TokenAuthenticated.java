@@ -14,7 +14,7 @@ import javax.ws.rs.NameBinding;
  * 
  * La Interface TokenAuthenticated.
  *
- * @author OSIS
+ * @author RCASO
  * @version 1.0 , 08-jun-2017
  */
 @NameBinding

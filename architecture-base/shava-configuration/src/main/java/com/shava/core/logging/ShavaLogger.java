@@ -7,7 +7,7 @@ package com.shava.core.logging;
  * 
  * La Interface ShavaLogger.
  *
- * @author OSIS
+ * @author RCASO
  * @version 1.0 , 08-jun-2017
  */
 public interface ShavaLogger {

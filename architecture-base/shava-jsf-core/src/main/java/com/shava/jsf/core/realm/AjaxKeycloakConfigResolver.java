@@ -16,7 +16,7 @@ import org.keycloak.adapters.spi.HttpFacade.Request;
  * 
  * La Class AjaxKeycloakConfigResolver.
  *
- * @author OSIS
+ * @author RCASO
  * @version 1.0 , 08-jun-2017
  */
 public class AjaxKeycloakConfigResolver implements KeycloakConfigResolver {

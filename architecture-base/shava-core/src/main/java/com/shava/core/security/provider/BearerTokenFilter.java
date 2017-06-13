@@ -30,7 +30,7 @@ import com.shava.security.security.generation.controller.TokenGeneratorControlle
  * 
  * La Class BearerTokenFilter.
  *
- * @author OSIS
+ * @author RCASO
  * @version 1.0 , 08-jun-2017
  */
 @Provider

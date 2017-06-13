@@ -16,7 +16,7 @@ import javax.persistence.Converter;
  * 
  * La Class LocalDateTimeConverter.
  *
- * @author OSIS
+ * @author RCASO
  * @version 1.0 , 08-jun-2017
  */
 
