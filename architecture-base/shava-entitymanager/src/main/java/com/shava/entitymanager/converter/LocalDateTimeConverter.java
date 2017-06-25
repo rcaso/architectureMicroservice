@@ -1,8 +1,7 @@
 package com.shava.entitymanager.converter;
 
-import java.time.Instant;
+import com.shava.common.converter.DateConverter;
 import java.time.LocalDateTime;
-import java.time.ZoneId;
 import java.util.Date;
 
 import javax.persistence.AttributeConverter;
@@ -29,7 +28,7 @@ public class LocalDateTimeConverter implements AttributeConverter<LocalDateTime,
 	@Override
 	public Date convertToDatabaseColumn(LocalDateTime date) {
 		// TODO Auto-generated method stub
-		return Date.from(date.atZone(ZoneId.of(ZoneTimeLima.GMT_5)).toInstant());
+                return DateConverter.converToDate(date);
 	}
 
 	/* (non-Javadoc)
@@ -38,7 +37,7 @@ public class LocalDateTimeConverter implements AttributeConverter<LocalDateTime,
 	@Override
 	public LocalDateTime convertToEntityAttribute(Date value) {
 		// TODO Auto-generated method stub
-		return Instant.ofEpochMilli(value.getTime()).atZone(ZoneId.of(ZoneTimeLima.GMT_5)).toLocalDateTime();
+		return DateConverter.convertToLocalDateTime(value);
 	}
 
 }

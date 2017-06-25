@@ -1,4 +1,4 @@
-package com.shava.security.security.authorization.type;
+package com.shava.common.authorization.type;
 
 
 /**

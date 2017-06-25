@@ -1,4 +1,4 @@
-package com.shava.security.audit;
+package com.shava.common.audit;
 
 /**
  * <ul>

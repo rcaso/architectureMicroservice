@@ -11,7 +11,7 @@ import javax.ws.rs.ext.Provider;
 
 
 import com.shava.jsf.core.client.extractor.TokenExtractor;
-import com.shava.security.security.authorization.type.HeaderValuesType;
+import com.shava.common.authorization.type.HeaderValuesType;
 
 
 /**

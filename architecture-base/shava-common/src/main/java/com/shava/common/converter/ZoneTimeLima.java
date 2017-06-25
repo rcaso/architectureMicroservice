@@ -1,4 +1,4 @@
-package com.shava.entitymanager.converter;
+package com.shava.common.converter;
 
 /**
  * <ul>

@@ -1,6 +1,6 @@
 package com.shava.entitymanager.audit;
 
-import com.shava.security.security.audit.entity.UserTrack;
+import com.shava.common.audit.entity.UserTrack;
 import java.util.List;
 import java.util.Map;
 

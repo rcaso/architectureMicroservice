@@ -16,8 +16,8 @@ import javax.transaction.TransactionSynchronizationRegistry;
 
 import com.shava.entitymanager.audit.Auditable;
 import com.shava.entitymanager.producer.DbApplication;
-import com.shava.security.security.audit.entity.UserTrack;
-import com.shava.security.audit.RegistryContextHolder;
+import com.shava.common.audit.entity.UserTrack;
+import com.shava.common.audit.RegistryContextHolder;
 
 
 

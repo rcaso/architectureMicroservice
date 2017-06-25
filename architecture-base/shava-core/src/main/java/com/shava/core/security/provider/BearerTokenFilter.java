@@ -6,7 +6,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import javax.annotation.Priority;
-import javax.inject.Inject;
 import javax.ws.rs.Priorities;
 import javax.ws.rs.container.ContainerRequestContext;
 import javax.ws.rs.container.ContainerRequestFilter;
@@ -18,9 +17,10 @@ import org.keycloak.representations.AccessToken;
 
 import com.shava.core.security.TokenAuthenticated;
 import com.shava.core.security.contextholder.ThreadLocalContextHolder;
-import com.shava.security.audit.RegistryContextHolder;
-import com.shava.security.security.audit.entity.UserTrack;
-import com.shava.security.security.generation.controller.TokenGeneratorController;
+import com.shava.common.audit.RegistryContextHolder;
+import com.shava.common.audit.entity.UserTrack;
+
+
 
 
 /**
@@ -38,9 +38,6 @@ import com.shava.security.security.generation.controller.TokenGeneratorControlle
 @TokenAuthenticated
 public class BearerTokenFilter implements ContainerRequestFilter {
 	
-	/** La token generator. */
-	@Inject
-	TokenGeneratorController tokenGenerator;
 
 	/* (non-Javadoc)
 	 * @see javax.ws.rs.container.ContainerRequestFilter#filter(javax.ws.rs.container.ContainerRequestContext)

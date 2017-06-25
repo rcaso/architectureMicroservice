@@ -11,7 +11,7 @@ import javax.transaction.TransactionSynchronizationRegistry;
 
 import com.shava.core.security.UserAudit;
 import com.shava.core.security.contextholder.ThreadLocalContextHolder;
-import com.shava.security.audit.RegistryContextHolder;
+import com.shava.common.audit.RegistryContextHolder;
 
 
 /**

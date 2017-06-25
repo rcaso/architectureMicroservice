@@ -24,7 +24,7 @@
 		</dependency>
     	<dependency>
     		<groupId>com.shava</groupId>
-    		<artifactId>shava-security</artifactId>
+    		<artifactId>shava-common</artifactId>
     		<version>0.0.1-SNAPSHOT</version>
     	</dependency>
     </dependencies>

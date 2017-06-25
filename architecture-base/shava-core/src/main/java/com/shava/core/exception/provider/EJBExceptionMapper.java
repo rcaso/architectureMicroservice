@@ -1,7 +1,7 @@
 package com.shava.core.exception.provider;
 
 import com.shava.core.logging.ShavaLogger;
-import com.shava.security.security.authorization.type.HeaderValuesType;
+import com.shava.common.authorization.type.HeaderValuesType;
 import javax.ejb.EJBException;
 import javax.inject.Inject;
 import javax.persistence.EntityNotFoundException;

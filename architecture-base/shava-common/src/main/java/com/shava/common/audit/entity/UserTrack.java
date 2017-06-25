@@ -1,4 +1,4 @@
-package com.shava.security.security.audit.entity;
+package com.shava.common.audit.entity;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;
