@@ -16,7 +16,7 @@ import org.keycloak.KeycloakSecurityContext;
 import org.keycloak.representations.AccessToken;
 
 import com.shava.core.security.TokenAuthenticated;
-import com.shava.core.security.contextholder.ThreadLocalContextHolder;
+import com.shava.common.contextholder.ThreadLocalContextHolder;
 import com.shava.common.audit.RegistryContextHolder;
 import com.shava.common.audit.entity.UserTrack;
 

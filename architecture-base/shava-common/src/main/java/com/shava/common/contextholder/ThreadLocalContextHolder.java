@@ -1,4 +1,4 @@
-package com.shava.core.security.contextholder;
+package com.shava.common.contextholder;
 
 import java.util.HashMap;
 import java.util.Map;

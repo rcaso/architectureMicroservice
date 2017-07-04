@@ -1,4 +1,4 @@
-package com.shava.entitymanager.exception;
+package com.shava.common.exception;
 
 import javax.ejb.ApplicationException;
 
@@ -17,6 +17,9 @@ public class BusinessException extends Exception {
 
 	/** La Constante serialVersionUID. */
 	private static final long serialVersionUID = 6242547663324560044L;
+        
+        private String code;
+        
 
 	/**
 	 * Instancia un nuevo business exception.
@@ -34,6 +37,26 @@ public class BusinessException extends Exception {
 	public BusinessException(String message) {
 		super(message);
 	}
+        
+        public BusinessException(String code, String message){
+            super(message);
+            this.code=code;
+            
+        }
+
+    /**
+     * @return the code
+     */
+    public String getCode() {
+        return code;
+    }
+
+    /**
+     * @param code the code to set
+     */
+    public void setCode(String code) {
+        this.code = code;
+    }
 	
 	
 
