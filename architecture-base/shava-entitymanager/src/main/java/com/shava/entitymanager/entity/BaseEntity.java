@@ -7,6 +7,7 @@ package com.shava.entitymanager.entity;
 
 import java.time.LocalDateTime;
 import javax.persistence.Column;
+import javax.persistence.MappedSuperclass;
 
 /**
  * <ul>
@@ -25,7 +26,7 @@ import javax.persistence.Column;
  * created_by
  * updated_by
  */
-
+@MappedSuperclass
 public class BaseEntity {
     
     @Column(name = "created_date")

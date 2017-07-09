@@ -28,17 +28,28 @@ import javax.persistence.PreUpdate;
 public class AuditListener {
     
     @PrePersist
-    public void onCreated(BaseEntity baseEntity){
-        baseEntity.setCreatedDate(LocalDateTime.now());
-        UserTrack userTrack = (UserTrack)ThreadLocalContextHolder.get(RegistryContextHolder.USER_TRACK);
-        baseEntity.setCreatedBy(userTrack.getUserName());
+    public void onCreated(Object baseEntity){
+        if(baseEntity instanceof BaseEntity){
+            BaseEntity entity = (BaseEntity)baseEntity;
+            entity.setCreatedDate(LocalDateTime.now());
+            UserTrack userTrack = (UserTrack)ThreadLocalContextHolder.get(RegistryContextHolder.USER_TRACK);
+            if(userTrack != null){
+                entity.setCreatedBy(userTrack.getUserName());
+            }
+        }
+        
     }
     
     @PreUpdate
-    public void onChanged(BaseEntity baseEntity){
-        baseEntity.setUpdatedDate(LocalDateTime.now());
-        UserTrack userTrack = (UserTrack)ThreadLocalContextHolder.get(RegistryContextHolder.USER_TRACK);
-        baseEntity.setUpdatedBy(userTrack.getUserName());
+    public void onChanged(Object baseEntity){
+        if(baseEntity instanceof BaseEntity){
+            BaseEntity entity = (BaseEntity)baseEntity;
+            entity.setUpdatedDate(LocalDateTime.now());
+            UserTrack userTrack = (UserTrack)ThreadLocalContextHolder.get(RegistryContextHolder.USER_TRACK);
+            if(userTrack != null){
+                entity.setUpdatedBy(userTrack.getUserName());
+            }
+        }
     }
 
 }
