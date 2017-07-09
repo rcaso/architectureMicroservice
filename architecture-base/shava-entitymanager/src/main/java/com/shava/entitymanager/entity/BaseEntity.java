@@ -6,12 +6,38 @@
 package com.shava.entitymanager.entity;
 
 import java.time.LocalDateTime;
+import javax.persistence.Column;
 
+/**
+ * <ul>
+ * <li>Copyright 2017  Shava. Todos los derechos reservados.</li>
+ * </ul> 
+ * 
+ * La Class Factura.
+ *
+ * @author raul
+ * @version 1.0 , 09/07/2017
+ * 
+ * columns required in tables are
+ * 
+ * created_date
+ * updated_date
+ * created_by
+ * updated_by
+ */
 
 public class BaseEntity {
+    
+    @Column(name = "created_date")
     private LocalDateTime createdDate;
+    
+    @Column(name = "updated_date")
     private LocalDateTime updatedDate;
+    
+    @Column(name = "created_by")
     private String createdBy;
+    
+    @Column(name = "updated_by")
     private String updatedBy;
 
     /**
