@@ -8,7 +8,8 @@
         <persistence-unit-defaults>
             <entity-listeners>
                 <entity-listener class="com.shava.entitymanager.listener.AuditListener">
-                    
+                    <pre-persist method-name="onCreated"></pre-persist>
+                    <pre-update method-name="onChanged"></pre-update>
                 </entity-listener>
             </entity-listeners>
         </persistence-unit-defaults>
