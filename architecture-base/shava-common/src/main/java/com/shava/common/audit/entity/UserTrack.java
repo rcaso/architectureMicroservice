@@ -1,7 +1,6 @@
 package com.shava.common.audit.entity;
 
 import java.io.Serializable;
-import java.time.LocalDateTime;
 import java.util.List;
 
 /**
@@ -21,12 +20,12 @@ public class UserTrack implements Serializable {
 	
 	/** La user name. */
 	private String userName;
+        
+        private Long userId;
 	
 	/** La ip address. */
 	private String ipAddress;
 	
-	/** La audit time. */
-	private LocalDateTime auditTime;
 	
 	/** La menu option. */
 	private String menuOption;
@@ -71,24 +70,6 @@ public class UserTrack implements Serializable {
 	}
 
 	/**
-	 * Obtiene audit time.
-	 *
-	 * @return audit time
-	 */
-	public LocalDateTime getAuditTime() {
-		return auditTime;
-	}
-
-	/**
-	 * Establece el audit time.
-	 *
-	 * @param auditTime el new audit time
-	 */
-	public void setAuditTime(LocalDateTime auditTime) {
-		this.auditTime = auditTime;
-	}
-
-	/**
 	 * Obtiene menu option.
 	 *
 	 * @return menu option
@@ -111,8 +92,7 @@ public class UserTrack implements Serializable {
 	 */
 	@Override
 	public String toString() {
-		return "UserTrack [userName=" + userName + ", ipAddress=" + ipAddress + ", auditTime=" + auditTime
-				+ ", menuOption=" + menuOption + "]";
+		return "UserTrack [userName=" + userName + ", ipAddress=" + ipAddress + ", menuOption=" + menuOption + "]";
 	}
 
 	/**
@@ -132,5 +112,19 @@ public class UserTrack implements Serializable {
 	public void setRoles(List<String> roles) {
 		this.roles = roles;
 	}
+
+    /**
+     * @return the userId
+     */
+    public Long getUserId() {
+        return userId;
+    }
+
+    /**
+     * @param userId the userId to set
+     */
+    public void setUserId(Long userId) {
+        this.userId = userId;
+    }
 
 }

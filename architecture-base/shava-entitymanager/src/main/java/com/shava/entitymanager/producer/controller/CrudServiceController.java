@@ -51,31 +51,10 @@ public class CrudServiceController {
 	 * @return the t
 	 */
 	public <T> T create(T t) {
-		Object object = transactionRegistry.getResource(RegistryContextHolder.USER_TRACK);
-		return create(t, object);
-	}
-	
-	/**
-	 * Creates the.
-	 *
-	 * @param <T> el tipo generico
-	 * @param t el t
-	 * @param object el object
-	 * @return the t
-	 */
-	public <T> T create(T t, Object object) {
-		if (object instanceof UserTrack) {
-			if (t instanceof Auditable) {
-				UserTrack userTrack = (UserTrack)object;
-				//update with real time
-				userTrack.setAuditTime(LocalDateTime.now());
-				Auditable auditable = (Auditable)t;
-				setAuditFields(auditable,userTrack);
-			}
-		}
 		this.em.persist(t);
 		return t;
 	}
+	
 	
 	/**
 	 * Sets the audit fields.
@@ -203,34 +182,12 @@ public class CrudServiceController {
 	 * @return the t
 	 */
 	public <T> T update(T t){
-		Object object = transactionRegistry.getResource(RegistryContextHolder.USER_TRACK);
-		return update(t, object);
-	}
-	
-	/**
-	 * Update.
-	 *
-	 * @param <T> el tipo generico
-	 * @param t el t
-	 * @param object el object
-	 * @return the t
-	 */
-	public <T> T update(T t, Object object){
-		if (object instanceof UserTrack) {
-			if (t instanceof Auditable) {
-				UserTrack userTrack = (UserTrack)object;
-				//update with real time
-				userTrack.setAuditTime(LocalDateTime.now());
-				Auditable auditable = (Auditable)t;
-				setAuditFields(auditable,userTrack);
-			}
-		}
-		T mergeEntity = null;
-		mergeEntity = this.em.merge(t);
+		T mergeEntity = this.em.merge(t);
 		this.em.flush();
 		return mergeEntity;
 	}
 	
+		
 	/**
 	 * Find with named query.
 	 *

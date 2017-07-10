@@ -5,8 +5,10 @@
  */
 package com.shava.entitymanager.entity;
 
+import com.shava.entitymanager.listener.AuditListener;
 import java.time.LocalDateTime;
 import javax.persistence.Column;
+import javax.persistence.EntityListeners;
 import javax.persistence.MappedSuperclass;
 
 /**
@@ -27,7 +29,8 @@ import javax.persistence.MappedSuperclass;
  * updated_by
  */
 @MappedSuperclass
-public class BaseEntity {
+@EntityListeners(AuditListener.class)
+public abstract class BaseEntity<T> {
     
     @Column(name = "created_date")
     private LocalDateTime createdDate;
@@ -36,10 +39,10 @@ public class BaseEntity {
     private LocalDateTime updatedDate;
     
     @Column(name = "created_by")
-    private String createdBy;
+    private T createdBy;
     
     @Column(name = "updated_by")
-    private String updatedBy;
+    private T updatedBy;
 
     /**
      * @return the createdDate
@@ -72,28 +75,28 @@ public class BaseEntity {
     /**
      * @return the createdBy
      */
-    public String getCreatedBy() {
+    public T getCreatedBy() {
         return createdBy;
     }
 
     /**
      * @param createdBy the createdBy to set
      */
-    public void setCreatedBy(String createdBy) {
+    public void setCreatedBy(T createdBy) {
         this.createdBy = createdBy;
     }
 
     /**
      * @return the updatedBy
      */
-    public String getUpdatedBy() {
+    public T getUpdatedBy() {
         return updatedBy;
     }
 
     /**
      * @param updatedBy the updatedBy to set
      */
-    public void setUpdatedBy(String updatedBy) {
+    public void setUpdatedBy(T updatedBy) {
         this.updatedBy = updatedBy;
     }
     

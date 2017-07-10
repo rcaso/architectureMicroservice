@@ -38,7 +38,12 @@ public class ThreadLocalContextHolder {
      * @return the object
      */
     public static Object get(String key) {
-        return THREAD_WITH_CONTEXT.get().get(key);
+        if(checkInitialited()){
+            return THREAD_WITH_CONTEXT.get().get(key);
+        } else {
+            return null;
+        }
+        
     }
 
     /**

@@ -59,7 +59,6 @@ public class BearerTokenFilter implements ContainerRequestFilter {
 		UserTrack userTrack = new UserTrack();
 		userTrack.setUserName(token.getPreferredUsername());
 		userTrack.setIpAddress("255.255.255.255");
-		userTrack.setAuditTime(LocalDateTime.now());
 		List<String> roles = new ArrayList<>(); 
 		token.getRealmAccess().getRoles().stream().forEach(role->roles.add(role));
 		token.getResourceAccess().entrySet().stream().forEach( entry-> {
