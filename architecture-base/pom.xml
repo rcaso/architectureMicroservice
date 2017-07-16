@@ -12,6 +12,7 @@
         <module>shava-common</module>
         <module>shava-configuration</module>
         <module>shava-core</module>
+	<module>shava-core-keycloak</module>
         <module>shava-entitymanager</module>
         <module>shava-menu</module>
         <module>shava-jsf-core</module>
