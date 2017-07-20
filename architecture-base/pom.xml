@@ -17,4 +17,32 @@
         <module>shava-menu</module>
         <module>shava-jsf-core</module>
     </modules>
+    <distributionManagement>
+        <snapshotRepository>
+            <id>nexus-server</id>
+            <layout>default</layout>
+            <url>http://nexus-shava.rhcloud.com/content/repositories/snapshots</url>
+        </snapshotRepository>
+        <repository>
+            <id>nexus-server</id>
+            <layout>default</layout>
+            <url>http://nexus-shava.rhcloud.com/content/repositories/releases</url>
+        </repository>
+    </distributionManagement>
+    <build>
+        <plugins>
+             <plugin>
+                <groupId>org.sonatype.plugins</groupId>
+                <artifactId>nexus-staging-maven-plugin</artifactId>
+                <version>1.6.6</version>
+                <extensions>true</extensions>
+                <configuration>
+                   <serverId>nexus-server</serverId>
+                   <nexusUrl>http://nexus-shava.rhcloud.com/</nexusUrl>
+                   <skipStaging>true</skipStaging>
+                </configuration>
+             </plugin>
+        </plugins>
+        
+    </build>
 </project>
