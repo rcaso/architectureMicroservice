@@ -4,7 +4,7 @@
       		<!--This sends everything else to /public -->
 		  <id>nexus</id>
 		  <mirrorOf>*</mirrorOf>
-		  <url>http://nexus-shava.rhcloud.com/content/groups/public/</url>
+		  <url>http://ec2-34-235-161-28.compute-1.amazonaws.com:8081/repository/maven-public/</url>
 		</mirror>
 	  </mirrors>
 	  <profiles>
