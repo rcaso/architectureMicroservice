@@ -39,7 +39,6 @@
                 <configuration>
                    <serverId>nexus-server</serverId>
                    <nexusUrl>http://ec2-34-235-161-28.compute-1.amazonaws.com:8081/nexus</nexusUrl>
-                   <skipStaging>true</skipStaging>
                 </configuration>
              </plugin>
         </plugins>
